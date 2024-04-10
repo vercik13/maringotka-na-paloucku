@@ -1,0 +1,30 @@
+@use 'global';
+
+
+/***** About *****/
+.about__photo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 1.5rem;
+}
+
+.about__photo2 {
+  margin: 2rem 0;
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  background: url("/img/kvetiny.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-attachment: fixed;
+  //clip-path: polygon(0 0, 100% 0, 100% 80%, 55% 100%, 47% 100%, 0 79%);
+  clip-path: polygon(50% 0%, 100% 0, 100% 85%, 50% 100%, 50% 100%, 0 85%, 0 0);
+}
+
+.about_img {
+  max-width: 300px;
+  width: 100%;
+  object-fit: cover;
+}

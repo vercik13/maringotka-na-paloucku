@@ -1,0 +1,48 @@
+@use 'global';
+
+/***** Photo *****/
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.main__photo {
+  display: flex;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+  margin: 0.5rem;
+  border-radius: 2px;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+
+.container__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.icon_img {
+  display: flex;
+}
+
+.icon_img img {
+  max-width: 3rem;
+  width: 100%;
+  box-shadow: none;
+}
+
+.icon_img h1 {
+  display: flex;
+  margin-left: 1rem;
+  align-items: center;
+}

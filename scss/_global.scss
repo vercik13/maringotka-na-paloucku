@@ -1,0 +1,109 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --spacer: 10px;
+  /* Mějte na paměti, že proměnná --spacer musí být definována někde v rámci vašeho projektu */
+  --spacer-quarter: calc(var(--spacer) / 4);
+  --spacer-half: calc(var(--spacer) / 2);
+  --spacer-bigger: calc(var(--spacer) * 1.5);
+  --spacer-double: calc(var(--spacer) * 2);
+
+  /* Custom CSS style */
+  --color: #0f1a1e;
+  --primary: #302c27;
+  --background: #1f1c18;
+  --light-primary: #3e5646;
+  --bg-button: #0f3236;
+}
+
+body {
+  margin: 0;
+  color: white;
+  font-family: "Open sans", serif;
+  background-color: var(--background);
+  -webkit-animation: opening 1s ease-in-out forwards;
+  animation: opening 1s ease-in-out forwards;
+  text-align: center;
+
+  font-weight: 300;
+  letter-spacing: 0px;
+  line-height: 1.6;
+}
+
+html {
+  scroll-behavior: smooth;
+  line-height: 2;
+}
+
+label,
+input,
+p {
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+ul {
+  padding-left: 2rem;
+}
+
+button {
+  color: #fff;
+  background-color: #3b7059;
+  padding: 0.5rem;
+  border: #0f3236;
+  border-radius: 5px;
+  list-style: none;
+  text-decoration: none;
+
+}
+
+button:hover {
+  background-color: #0b454d;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.97);
+}
+
+h1 {
+  /* font-family: "Open sans", cursive; */
+  font-family: 'Amatic SC', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 42px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+.container {
+  padding: 6rem 8rem 0 8rem;
+}
+
+.container__text {
+  margin: 2rem 0;
+}
+
+.op {
+  margin: 1rem;
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    padding: 6rem 2rem 0 2rem;
+  }
+}

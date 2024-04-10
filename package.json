@@ -1,0 +1,19 @@
+{
+  "name": "maringotka-na-paloucku",
+  "version": "1.0.0",
+  "main": ".eleventy.js",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "serve": "npx @11ty/eleventy --serve"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fslightbox": "^3.4.1"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "sass": "^1.71.1"
+  },
+  "description": ""
+}
